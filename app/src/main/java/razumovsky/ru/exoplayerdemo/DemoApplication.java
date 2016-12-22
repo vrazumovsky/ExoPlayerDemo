@@ -30,6 +30,6 @@ public class DemoApplication extends Application {
     }
 
     HttpDataSource.Factory buildHttpDataSourceFactory(DefaultBandwidthMeter bandwidthMeter) {
-        return new DefaultHttpDataSourceFactory(userAgent, bandwidthMeter);
+        return new DefaultHttpDataSourceFactory(userAgent, bandwidthMeter, 5000, 5000, true);
     }
 }
